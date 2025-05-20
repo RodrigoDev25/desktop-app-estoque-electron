@@ -5,7 +5,7 @@ submitVar.addEventListener("click", function(){
     let passwordVar = document.getElementById("inputPassword").value
 
     if (emailVar == "rodrigo@email.com" && passwordVar == "123") {
-      window.location.href="dashboard.html"
+      window.location.replace="dashboard.html"
     }
 
 })

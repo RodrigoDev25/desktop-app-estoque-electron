@@ -9,6 +9,7 @@ function creatWindow () {
     const window = new BrowserWindow({
         width: 800,
         height: 600,
+        icon: "assets/icon-estoque.png",
     })
 
     //carregar o arquivo html na janela

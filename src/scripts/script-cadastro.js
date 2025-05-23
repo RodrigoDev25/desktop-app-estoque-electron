@@ -1,10 +1,22 @@
+let listaProdutos = []
 let formProduto = document.getElementById("form-produto")
 function cadastrarProduto(event) {
     event.preventDefault()
-    let produto = document.getElementById("nome-produto").value
-    let quantidade = document.getElementById("quantidade-produto").value
-    let imagem = document.getElementById("imagem-produto").value
+    let inputProduto = document.getElementById("nome-produto").value
+    let inputQuantidade = document.getElementById("quantidade-produto").value
+    let inputImagem = document.getElementById("imagem-produto").value
 
-    console.log(produto, quantidade, imagem)
+let objetoProduto = {
+    nome: inputProduto,
+    quantidade: inputQuantidade,
+    imagem: inputImagem
 }
+
+listaProdutos.push(objetoProduto)
+
+console.log(listaProdutos)
+
+}
+
+
 formProduto.addEventListener("submit", cadastrarProduto)
